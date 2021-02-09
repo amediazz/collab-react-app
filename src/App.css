@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,236 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* WE ARE GOING TO APPLY STYLE TO THE HOLLE PAGES */
+
+*{
+  box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  padding:0;
+  margin: 0;
+  color: #333;
+}
+.container{
+  max-width: 1366px;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  margin: 0 auto;
+  
+}
+
+p{
+  max-width: 600;
+}
+
+/* NAVBAR */
+
+header{
+  display: flex;
+  align-items:center ; 
+}
+
+.navigation{
+  flex-grow: 1;
+  margin-left: 40px;
+  
+}
+.navigation--item{
+  text-decoration: none;
+  color: #bdbdbd;
+  margin-left: 24px;
+}
+
+.navigation--item:first-child{
+  margin-left: 0;
+}
+
+.navigation--item--active{
+  color: #333;
+}
+
+.navigation--button{
+    
+  width: 164px;
+  height: 52px;
+  border: none;
+  background: linear-gradient(270deg, #FAA245 0%, #D8328A 37.25%, #753872 100%);
+  border-radius: 50px;
+  color: white;
+  padding: 8px 26px;
+ 
+}
+/* MOBILE NAVIGATION */
+
+.menu-button{
+  display: none;
+  
+}
+
+/* HOME */
+
+main{
+  display:flex;
+  align-items: center;
+}
+.main--content{
+  flex: 1;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+h1.headline{
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.discription{
+ color:  #828282;
+ margin: 0;
+ padding: 0;
+ margin-top: 10%;
+ margin-bottom: 10%;
+}
+.play-button{
+border: none;
+border:1px solid #e0e0e0e0;
+border-radius: 35px;
+padding: 12px 16px;
+display: flex;
+align-content: center;
+
+}
+.play-button svg{
+ margin-right: 12px;
+}
+.main--img{
+  flex: 1;
+}
+.main--img img{
+  width: 100%;
+}
+
+
+/* ABOUT */
+
+h4.headline{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+/* SERVICES */
+
+/* CONTACT */
+
+.adress{
+  font-family: Georgia;
+  font-size: 18px;
+  
+  color: #312f2f;
+}
+.phone{
+  font-family: Georgia;
+  font-size: 18px;
+  
+  color: #312f2f;
+}
+.main--img iframe{
+  flex: 1;
+  width: 100%;
+}
+/* FOOTER */
+
+
+footer{
+  display: flex;
+  color: #312f2f;
+  align-items: center;
+  padding: 0;
+  
+}
+.social {
+  display: flex;
+  align-items: center;
+}
+.social--item{
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+footer .social .social--item{
+  display: flex;
+  align-items: center;
+}
+span{
+  display: flex;
+}
+
+
+/* let's design the mobile button apearance */
+
+
+
+.mobile-navigation-header{
+  display: grid;
+  
+}
+.mobile--navigation--item{
+  text-decoration: none;
+  font-size: 1.5rem;
+    color: #bdbdbd;
+    display: block;
+    margin-bottom: 24px;
+    
+}
+
+.close-button button{
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  margin-inline: 200px;
+  margin-top: -27px;
+  margin-bottom: 23px;
+}
+.mobile-navigation-header .close-button{
+  display: flex;
+
+}
+.mobile-navigation-header img{
+  display: flex;
+}
+
+
+/* this code is to ditined to mobile apearance */
+
+@media only screen and (max-width:660px){
+  
+  header .logo{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+    padding-right: 60%;
+  }
+  .navigation{
+    display: none;
+  }
+  main{
+    display: block;
+  }
+ .mobile-navigation{
+   display: block;
+ }
+  
 }

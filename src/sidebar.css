@@ -1,0 +1,35 @@
+
+.mobile-navigation{
+  position: fixed;
+  width: 100vh;
+  height: 50vh;
+  background-color: white;
+  padding:24px;
+  
+}
+.mobile--navigation--item{
+    text-decoration: none;
+    font-size: 1.5rem;
+      color: #bdbdbd;
+      display: block;
+      margin-bottom: 24px;
+    
+  }
+  .bm-menu-wrap{
+    background-color:white;
+  }
+
+div.bm-overlay {
+ 
+  width: 20%;
+  padding: -77px;
+}
+
+
+.bm-overlay {
+ 
+  width: 95%;
+  height: 92%;
+  background: rgba(0, 0, 0,0.1) none repeat scroll 0% 0%;
+  opacity: 2.1;
+}
